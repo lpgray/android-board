@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:xici="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_action_edit"
+        xici:showAsAction="ifRoom"
+        android:title="@string/action_new"/>
+    
+    <item
+        android:id="@+id/action_flush"
+        android:icon="@drawable/ic_action_refresh"
+        xici:showAsAction="ifRoom"
+        android:title="@string/action_flush"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        xici:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
