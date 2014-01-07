@@ -4,18 +4,48 @@
     <item
         android:id="@+id/action_new"
         android:icon="@drawable/ic_action_edit"
-        xici:showAsAction="ifRoom"
+        xici:showAsAction="always"
         android:title="@string/action_new"/>
     
     <item
-        android:id="@+id/action_flush"
-        android:icon="@drawable/ic_action_refresh"
-        xici:showAsAction="ifRoom"
-        android:title="@string/action_flush"/>
+        android:id="@+id/action_login"
+        android:icon="@drawable/ic_action_accounts"
+        xici:showAsAction="always"
+        android:title="@string/action_login"/>
     
     <item
-        android:id="@+id/action_settings"
-        xici:showAsAction="never"
-        android:title="@string/action_settings"/>
-
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_action_overflow"
+        xici:showAsAction="always"
+        android:title="@string/action_more">
+        
+        <menu>
+            <item
+		        android:id="@+id/action_share"
+		        android:icon="@drawable/ic_action_share"
+		        xici:showAsAction="ifRoom"
+		        android:title="@string/action_share"/>
+		    
+		    <item
+		        android:id="@+id/action_about"
+		        android:icon="@drawable/ic_action_about"
+		        xici:showAsAction="collapseActionView"
+		        android:title="@string/action_about"/>
+		    
+		    <item
+		        android:id="@+id/action_feed"
+		        android:icon="@drawable/ic_action_help"
+		        xici:showAsAction="ifRoom"
+		        android:title="@string/action_feed"/>
+		    
+		    <item
+		        android:id="@+id/action_logout"
+		        android:icon="@drawable/ic_action_stop"
+		        xici:showAsAction="ifRoom"
+		        android:title="@string/action_logout"
+		        android:visible="false"/>
+        </menu>
+        
+    </item>
+    
 </menu>
